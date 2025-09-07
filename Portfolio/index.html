@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav">
+        <h1>Portfolio</h1>
+        <nav aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="home">
+        <div class="hero">
+          <div class="hero-content">
+            <p class="overline muted">Hello, I'm</p>
+            <h2 class="hero-title">Meenu Tabassum Khan</h2>
+            <p class="hero-subtitle">Passionate <span id="type-target" class="type"></span></p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <div class="avatar">
+              <img src="https://t4.ftcdn.net/jpg/11/66/06/77/360_F_1166067709_2SooAuPWXp20XkGev7oOT7nuK1VThCsN.jpg" alt="Profile picture of Meenu Tabassum Khan" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" style="margin-top: 20px;">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="about-bio card">
+            <p>
+              I'm a Software QA Engineer focused on delivering reliable, high-quality
+              releases through thoughtful test strategies, automation, and collaboration.
+              I value clear test design, measurable coverage, and fast feedback loops.
+            </p>
+            <p class="muted">
+              My toolkit spans functional, integration, and end-to-end testing, with
+              a focus on maintainable automation and CI integration.
+            </p>
+          </div>
+          <div class="about-skills card">
+            <h3 class="skills-title">Skills</h3>
+            <ul class="skills">
+              <li>Test Automation</li>
+              <li>Selenium</li>
+              <li>Cypress</li>
+              <li>Playwright</li>
+              <li>API Testing</li>
+              <li>Postman</li>
+              <li>REST/HTTP</li>
+              <li>Jest/Mocha</li>
+              <li>CI/CD</li>
+              <li>Bug Tracking (Jira)</li>
+              <li>Test Management (TestRail)</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" style="margin-top: 20px;">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="https://s3-figma-plugin-images-production-sig.figma.com/plugins/carousel/img/1407835454031119413/15d6293772aedcb4d6f9295bb54857b2f5c1ea3d?Expires=1757894400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lmCcGCC0vfCEDPrsCrKVans8u41SWteWuhxMv8-ZYuIUKVppxH5XBt4SNIea~LLSvzLj~u-dV9YWgpDUXXe-qOI-Zq2WXvJL~sqp56ABuWiilvLf8ZgpWYnthItkc1X1Cw-YP6owxfaB5Y5BVZyJht85FVYVOCkpue0D9cJKrZog-hZNpGW91lmwNJFT5WLmDhJizsnRZRRM5SpbIWkH07uSggG4zc4YtNoeVtVlJqY4sufkMDQhS-I-e9btnx-XXjSjQKvFhVOnj~ZALFOmoYLXY~z~3Adi~pAcULUK2OuZSa7kumvMnJot3pNj3AQVLBkqLKpIyOYGmFAQxcNXXw__" alt="Project preview image" />
+            </div>
+            <div class="project-content">
+              <h3>Test Automation Suite</h3>
+              <p class="muted">End‑to‑end test framework using Cypress with CI integration and parallelization.</p>
+              <div class="project-tags">
+                <span>Cypress</span><span>CI/CD</span><span>Reporting</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Case Study</a>
+                <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="https://picsum.photos/seed/qa2/640/360" alt="API testing workspace with requests and responses" />
+            </div>
+            <div class="project-content">
+              <h3>API Testing Toolkit</h3>
+              <p class="muted">Reusable Postman collections and Newman pipelines for regression and smoke tests.</p>
+              <div class="project-tags">
+                <span>Postman</span><span>Newman</span><span>CI</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Docs</a>
+                <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card reveal">
+            <div class="project-media">
+              <img src="https://picsum.photos/seed/qa3/640/360" alt="Cross-browser end-to-end testing in progress" />
+            </div>
+            <div class="project-content">
+              <h3>Playwright E2E Pack</h3>
+              <p class="muted">Cross‑browser Playwright suite with fixtures, page objects, and trace viewer.</p>
+              <div class="project-tags">
+                <span>Playwright</span><span>POM</span><span>Tracing</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Overview</a>
+                <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top: 20px;">
+        <h2>Get in touch</h2>
+        <p class="muted contact-subtitle">I’d love to hear from you! Fill out the form below.</p>
+        <div class="contact-layout">
+          <form id="contact-form" class="contact-form card" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <p class="field-error" data-for="name"></p>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <p class="field-error" data-for="email"></p>
+            </div>
+            <div class="form-row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What’s this about?" required />
+              <p class="field-error" data-for="subject"></p>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="How can I help?" required></textarea>
+              <p class="field-error" data-for="message"></p>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+            <p class="form-status muted" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-details card">
+            <h3>Contact details</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="muted">Email</span>
+                <a href="mailto:you@example.com">you@example.com</a>
+              </li>
+              <li>
+                <span class="muted">Phone</span>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+              </li>
+              <li>
+                <span class="muted">Social</span>
+                <div class="contact-social">
+                  <a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.42c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85v5.52H9.47V9h3.41v1.56h.05c.47-.88 1.62-1.8 3.33-1.8 3.56 0 4.22 2.34 4.22 5.39v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                  </a>
+                  <a class="icon-btn" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.73-4.04-1.6-4.04-1.6-.55-1.38-1.34-1.75-1.34-1.75-1.1-.76.09-.74.09-.74 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23.95-.26 1.98-.39 3-.39s2.05.13 3 .39c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5z"/></svg>
+                  </a>
+                  <a class="icon-btn" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 7.2c.01.15.01.3.01.45 0 4.6-3.5 9.9-9.9 9.9-2 0-3.8-.6-5.3-1.6.27.03.54.04.82.04 1.67 0 3.2-.57 4.42-1.53a3.49 3.49 0 0 1-3.26-2.42c.22.04.45.06.69.06.33 0 .65-.04.95-.13a3.48 3.48 0 0 1-2.79-3.41v-.04c.47.26 1 .41 1.56.43a3.48 3.48 0 0 1-1.55-2.9c0-.64.17-1.23.47-1.75a9.9 9.9 0 0 0 7.19 3.64 3.93 3.93 0 0 1-.09-.8 3.48 3.48 0 0 1 6.02-2.38 6.9 6.9 0 0 0 2.21-.85 3.5 3.5 0 0 1-1.53 1.92 6.96 6.96 0 0 0 2-.56 7.5 7.5 0 0 1-1.74 1.8z"/></svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> Meenu Tabassum Khan</p>
+        <ul class="social-list">
+          <li>
+            <a class="icon-btn" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.73-4.04-1.6-4.04-1.6-.55-1.38-1.34-1.75-1.34-1.75-1.1-.76.09-.74.09-.74 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23.95-.26 1.98-.39 3-.39s2.05.13 3 .39c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.45 20.45h-3.55v-5.42c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85v5.52H9.47V9h3.41v1.56h.05c.47-.88 1.62-1.8 3.33-1.8 3.56 0 4.22 2.34 4.22 5.39v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-btn" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19.6 7.2c.01.15.01.3.01.45 0 4.6-3.5 9.9-9.9 9.9-2 0-3.8-.6-5.3-1.6.27.03.54.04.82.04 1.67 0 3.2-.57 4.42-1.53a3.49 3.49 0 0 1-3.26-2.42c.22.04.45.06.69.06.33 0 .65-.04.95-.13a3.48 3.48 0 0 1-2.79-3.41v-.04c.47.26 1 .41 1.56.43a3.48 3.48 0 0 1-1.55-2.9c0-.64.17-1.23.47-1.75a9.9 9.9 0 0 0 7.19 3.64 3.93 3.93 0 0 1-.09-.8 3.48 3.48 0 0 1 6.02-2.38 6.9 6.9 0 0 0 2.21-.85 3.5 3.5 0 0 1-1.53 1.92 6.96 6.96 0 0 0 2-.56 7.5 7.5 0 0 1-1.74 1.8z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="icon-btn" href="mailto:you@example.com" aria-label="Email">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
